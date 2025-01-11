@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main</title>
     <link rel="stylesheet" href="main.css" />
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       body {
-        margin: 0; /* Remove default body margin */
+        margin: 0;
+        padding-top: 230px;
       }
 
       header {
-        background-color: #006; /* Header background color */
-        color: white; /* Text color */
+        background-color: #006; 
+        color: white; 
         font-size: 25px;
         text-align: left;
         padding: 2rem;
-        width: 100%; /* Ensure header spans full width */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
       }
 
       img {
@@ -34,33 +40,99 @@
         background-color: #006;
         text-align: center;
         padding: 10px 0;
+        width: 100%;
+        position: fixed;
+        top: 170px; 
+        z-index: 999;
       }
       nav a {
         color: white;
-        margin: 0 15px;
+        margin: 0 30px;
         text-decoration: none;
         font-size: 18px;
       }
       nav a:hover {
         text-decoration: underline;
       }
+      .carousel-inner img {
+        height: 250px; /* Adjust height */
+        width: 50%; /* Adjust width */
+        margin-left: 0; /* Align to the left */
+      }
     </style>
   </head>
   <body>
+    <div>
+      <div>
     <header>
       <img src="image/customlogo.png" alt="Custom Logo" />
       TRADING ACROSS BORDERS
       <p>Brunei Darussalam</p>
-    
     </header>
     <nav>
       <a href="news.html">News</a>
       <a href="operationhour.html">Operation Hour</a>
       <a href="about.html">Links</a>
-      <a href="OTM.html">Other Customs Matters</a>
+      <a href="OCM.html">Other Customs Matters</a>
       <a href="contact.html">Contact Us</a>
-     </nav>
+    </nav>
+  </div>
+    </div>
+    <div>
+      <h1 style="color: #006;padding-left: 20px;">WELCOME TO TRADING ACROSS BORDERS</h1>
+     
+      <h2 style="color: #006;padding-left: 20px;">Latest News</h2>
+
+  </div>
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://tradingacrossborders.mofe.gov.bn/SiteAssets/SitePages/home/Forwarding%20Agent%20List%202024.pdf">
+        <img src="image/forwardingagent.png" alt="Forwarding Agent List 2024" class="d-block w-100">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://tradingacrossborders.mofe.gov.bn/SiteAssets/SitePages/home/RUNNER%20LIST%202024.pdf">
+        <img src="image/runnerlist.png" alt="Runner List 2024" class="d-block w-100">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://tradingacrossborders.mofe.gov.bn/SiteAssets/SitePages/home/Shipping%20Agent%20list%202024.pdf">
+        <img src="image/shippingagent.png" alt="Shipping Agent List 2024" class="d-block w-100">
+      </a>
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div>
+  <h2 style="color: #006;padding-left: 20px;">Other Services</h2>
+
+</div>
 
 
+    <!-- Add Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
