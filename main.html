@@ -59,6 +59,35 @@
         width: 50%; /* Adjust width */
         margin-left: 0; /* Align to the left */
       }
+      footer {
+        background-color: #006; /* Footer background color */
+        color: white; /* Text color */
+        text-align: center; /* Center align text */
+        padding: 10px 0; /* Reduce padding for spacing */
+        position: fixed; /* Fix position */
+        bottom: 0; /* Align to bottom */
+        width: 100%; /* Full width */
+        display: flex; /* Flexbox for layout */
+        justify-content: space-between; /* Space between items */
+        align-items: center; /* Center items vertically */
+        font-size: 14px; /* Reduce font size */
+      }
+      footer img {
+        width: 80px; /* Adjust logo size */
+        height: auto;
+        margin-left: 20px; /* Margin for spacing */
+      }
+      footer .left, footer .right {
+        flex: 2; /* Flex grow */
+      }
+      footer .right {
+        text-align: right; /* Align text to right */
+        margin-right: 20px; /* Margin for spacing */
+      }
+      footer p {
+        font-size: medium;
+        margin: 5px 0; /* Adjust margin for paragraphs */
+      }
     </style>
   </head>
   <body>
@@ -126,8 +155,62 @@
 </div>
 <div>
   <h2 style="color: #006;padding-left: 20px;">Other Services</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="https://tradingacrossborders.mofe.gov.bn/Downloadable/SLMS.pdf">
+          <img src="image/slms.png" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://login.bdnsw.gov.bn/ees/user/login">
+          <img src="image/ees.png" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://login.bdnsw.gov.bn/schemecardrevenue/login/login.jsf">
+          <img src="image/bdnsw.jpg" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://bdnsw.mofe.gov.bn/Pages/Customs-Im-Duty-Payment.aspx">
+          <img src="image/onlinepay.png" class="img-thumbnail">
+ <!-- jgn lupa ubah link to new html -->
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://tradingacrossborders.mofe.gov.bn/SitePages/claiming-preferential-tariff-treatment.aspx">
+          <img src="image/FTA in TAB.png" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://www.aiti.gov.bn/">
+          <img src="image/aiti_logo.png" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://bruneitrade.mofe.gov.bn/SitePages/home.aspx">
+          <img src="image/BDNTR.png" class="img-thumbnail">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="https://asean.mendel-online.com/auth/realms/MendelOnline/protocol/openid-connect/auth?client_id=mendel-online&redirect_uri=https%3A%2F%2Fasean.mendel-online.com%2F&state=caf99009-1297-4b2d-8ff9-e1306cc482cf&response_mode=fragment&response_type=code&scope=openid&nonce=1c5c4ef2-4e83-4fea-a602-1a0ffeadb368">
+          <img src="image/ASEAN TARIFF FINDER.png" class="img-thumbnail">
+        </a>
+      </div>
+    </div>
 
 </div>
+
+<footer>
+  <div class="left">
+    <img src="image/customlogo.png" alt="Custom Logo" />
+    <p>Royal Customs and Excise Department<br>Ministry of Finance</p>
+  </div>
+  <div class="right">
+    <p>Copyright 2016 © Trading Across Borders Brunei • All rights reserved.</p>
+  </div>
+</footer>
 
 
     <!-- Add Bootstrap JS and dependencies -->
